@@ -25,7 +25,7 @@ fun main(){
         do {
             try {
                 print("enter num ${i + 1}: ")
-                num[i] = readln().toDouble()
+                num[i] = readLine()!!.toDouble()
                 flag = false
             }
             catch (e: NumberFormatException){

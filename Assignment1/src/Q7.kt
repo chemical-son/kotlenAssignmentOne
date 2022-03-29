@@ -17,7 +17,7 @@ class Q7 {//Right a Kotlin Program to Convert String to char array.
 fun main(){
     //take string
     print("enter string: ")
-    var str: String = readln()
+    var str: String = readLine()!!
     var obj: Q7 = Q7(str)
 
     println("seq of chars:")

@@ -22,7 +22,7 @@ fun main(){
     do {
         try {
             print("enter size of array: ")
-            sizeOfArray = readln().toInt()
+            sizeOfArray = readLine()!!.toInt()
             if(sizeOfArray > 0)
                 flag = false
             else
@@ -41,7 +41,7 @@ fun main(){
         do {
             try {
                 print("enter num ${i + 1}: ")
-                num[i] = readln().toDouble()
+                num[i] = readLine()!!.toDouble()
                 flag = false
             }
             catch (e: NumberFormatException){

@@ -22,7 +22,7 @@ fun main(){
     do {
         try {
             print("enter num: ")
-            num = readln().toInt()
+            num = readLine()!!.toInt()
             flag = false
         }
         catch (e: NumberFormatException){

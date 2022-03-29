@@ -21,7 +21,7 @@ fun main(){
         do {
             try {
                 print("enter num ${i + 1}: ")
-                num[i] = readln().toDouble()
+                num[i] = readLine()!!.toDouble()
                 flag = false
             }
             catch (e: NumberFormatException){
@@ -31,7 +31,7 @@ fun main(){
     }
 
     print("enter searched element: ")
-    var search: Double = readln().toDouble()
+    var search: Double = readLine()!!.toDouble()
     var obj: Q4 = Q4(num, search)
 
     var res = obj.searchForSpecificValue()

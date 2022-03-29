@@ -31,7 +31,7 @@ fun main(){
     do {
         try {
             print("enter binary no.: ")
-            binaryAsStr = readln()
+            binaryAsStr = readLine()!!
             binaryAsStr = binaryAsStr.trim()
             println("/$binaryAsStr/")
             if(binaryAsStr.indexOf(' ') == -1){

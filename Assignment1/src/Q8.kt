@@ -21,7 +21,7 @@ fun main(){
     do {
         try {
             print("enter number: ")
-            num = readln().toInt()
+            num = readLine()!!.toInt()
             if(num > -1)
                 flag = false
             else

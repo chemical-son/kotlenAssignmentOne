@@ -9,7 +9,7 @@ class Q10 {//Right a kotlin Program to calculate power using recursion.
         this.power = power
     }
 
-    private fun helper(base: Double, power: Int): Double{
+    private fun helper(base: Double, power: Int): Double {
         if(power == 1)
             return base
         return base * helper(base, power-1)
@@ -29,7 +29,7 @@ fun main(){
     do {
         try {
             print("enter base: ")
-            base = readln().toDouble()
+            base = readLine()!!.toDouble()
             flag = false
         }
         catch (e: NumberFormatException){
@@ -41,7 +41,7 @@ fun main(){
     do {
         try {
             print("enter power: ")
-            power = readln().toInt()
+            power = readLine()!!.toInt()
             flag = false
         }
         catch (e: NumberFormatException){

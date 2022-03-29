@@ -29,7 +29,7 @@ fun main(){
     do {
         try {
             print("enter size of Array: ")
-            sizeOfList = readln().toInt()
+            sizeOfList = readLine()!!.toInt()
             flag = false
         }
         catch (e: NumberFormatException){
@@ -44,7 +44,7 @@ fun main(){
         do {
             try {
                 print("enter num ${i+1}: ")
-                list.add(readln().toInt())
+                list.add(readLine()!!.toInt())
                 flag = false
             }
             catch (e: NumberFormatException){

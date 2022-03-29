@@ -21,7 +21,7 @@ class Q11 {//Right a kotlin Program to Reverse a Sentence Using Recursion.
 fun main(){
     //take sentence form user.
     print("enter sentence: ")
-    var str: String = readln()
+    var str: String = readLine()!!
 
     var obj: Q11 = Q11(str)
 

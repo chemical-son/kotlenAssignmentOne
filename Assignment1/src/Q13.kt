@@ -10,7 +10,7 @@ fun isLetters(char: String): Boolean {
 fun main(){
     println("we check first character only from your input")
     print("enter your single input: ")
-    var char = readln()
+    var char = readLine()!!
     if (isLetters(char))
         println("is a character")
     else

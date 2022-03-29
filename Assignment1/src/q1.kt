@@ -29,7 +29,7 @@ fun main(){
     do {
         try {
             print("enter num1: ")
-            num1 = readln().toDouble()
+            num1 = readLine()!!.toDouble()
             flag = false
         }
         catch (e: NumberFormatException){
@@ -42,7 +42,7 @@ fun main(){
     do {
         try {
             print("enter num2: ")
-            num2 = readln().toDouble()
+            num2 = readLine()!!.toDouble()
             flag = false
         }
         catch (e: NumberFormatException){
@@ -54,7 +54,7 @@ fun main(){
     var ma: Main = Main(num1, num2)
 
     print("operation (+, -, *, /): ")
-    var operation: String = readln()
+    var operation: String = readLine()!!
 
     when(operation){
         "+"-> println("num1 + num2 = ${ma.add()}")
